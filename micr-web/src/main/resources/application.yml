@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: micr-dataservice
+server:
+    port: 8000
+
+
+#dubbo配置
+dubbo:
+  registry:
+    address: zookeeper://localhost:2181
+  scan:
+    base-packages: com.xiaojie.front
+  provider:
+    timeout: 50000
+    retries: 0
+
